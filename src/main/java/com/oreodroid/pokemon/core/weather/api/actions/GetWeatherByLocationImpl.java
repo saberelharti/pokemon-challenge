@@ -15,6 +15,6 @@ public class GetWeatherByLocationImpl implements GetWeatherByLocation {
 
     @Override
     public Weather handle(String location) {
-        return  openWeatherPort.getWeatherByLocation(location).toDomain();
+        return openWeatherPort.getWeatherByLocation(location).toDomain();
     }
 }
