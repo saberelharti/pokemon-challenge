@@ -1,0 +1,11 @@
+spring.application.name: pokemon
+server.port: ${PORT:5656}
+
+app.package: com.oreodroid
+
+app.open-weather-api:
+  url: ${OPEN_WEATHER_URL:https://api.openweathermap.org/data/2.5/weather}
+  appid: ${APP_ID:0fdc3394d1eec47b6bcdbe184cd42b93}
+
+
+
