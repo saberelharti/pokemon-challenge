@@ -6,9 +6,8 @@ import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping(path = "/api", produces = "application/json")
 @AllArgsConstructor
-@CrossOrigin(origins = "*")
+@RequestMapping(path = "/api", produces = "application/json")
 public class WeatherController {
 
     private final GetWeatherByLocation getWeatherByLocation;

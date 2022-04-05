@@ -18,7 +18,7 @@ public class OpenWeatherAdapter implements OpenWeatherPort {
     @Override
     public OpenWeatherResponse getWeatherByLocation(String location) {
 
-        val detectPlateUrl = String.format("%s?q=%s&appid=%s", openWeatherApiConfig.getUrl(), location, openWeatherApiConfig.getAppid());
-        return restTemplate.getForObject(detectPlateUrl, OpenWeatherResponse.class);
+        String weatherApi = String.format("%s?q=%s&appid=%s", openWeatherApiConfig.getUrl(), location, openWeatherApiConfig.getAppid());
+        return restTemplate.getForObject(weatherApi, OpenWeatherResponse.class);
     }
 }
