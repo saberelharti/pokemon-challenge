@@ -27,6 +27,6 @@ public class Weather {
 
     public boolean isRaining() {
 
-        return this.main.equals("Rains");
+        return this.main.equals("Rain");
     }
 }
