@@ -1,0 +1,7 @@
+version: '3.6'
+
+services:
+  pockemon:
+    build: .
+    ports:
+      - "5656:5656"

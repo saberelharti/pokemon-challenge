@@ -9,4 +9,3 @@ app.open-weather-api:
 
 app.pokemon-api:
   url: ${POKEMON_URL:https://pokeapi.co/api/v2}
-

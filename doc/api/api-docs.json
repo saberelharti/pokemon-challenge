@@ -1,0 +1,98 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Api Documentation",
+    "version": "1.0",
+    "title": "Api Documentation",
+    "termsOfService": "urn:tos",
+    "contact": {},
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  },
+  "host": "localhost:5656",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "weather-controller",
+      "description": "Weather Controller"
+    }
+  ],
+  "paths": {
+    "/api/weather": {
+      "get": {
+        "tags": [
+          "weather-controller"
+        ],
+        "summary": "getWeather",
+        "operationId": "getWeatherUsingGET",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "city",
+            "in": "query",
+            "description": "city",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Weather"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    }
+  },
+  "definitions": {
+    "Weather": {
+      "type": "object",
+      "properties": {
+        "city": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "humidity": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "main": {
+          "type": "string"
+        },
+        "pokemon": {
+          "type": "string"
+        },
+        "pressure": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "raining": {
+          "type": "boolean"
+        },
+        "temperature": {
+          "type": "number",
+          "format": "float"
+        }
+      },
+      "title": "Weather"
+    }
+  }
+}
