@@ -12,7 +12,7 @@ A collection-scope variable `base_url` points to the usual host `http://localhos
 
 |Variable     |Default value               |Set in         |May override in  |Example|
 |-------------|----------------------------|---------------|-----------------|-------|
-|`base_url`   |`http://localhost:9090`     |Environment    |Environment      |`      `|
+|`base_url`   |`http://localhost:5656`     |Environment    |Environment      |`      `|
 
 # Run Project
 
