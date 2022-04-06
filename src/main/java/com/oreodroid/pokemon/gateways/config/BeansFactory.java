@@ -1,6 +1,7 @@
 package com.oreodroid.pokemon.gateways.config;
 
 import com.oreodroid.pokemon.commons.config.OpenWeatherApiConfig;
+import com.oreodroid.pokemon.commons.config.PokemonApiConfig;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -18,5 +19,11 @@ public class BeansFactory {
     @ConfigurationProperties(prefix = "app.open-weather-api")
     public OpenWeatherApiConfig createOpenWeatherApiConfig() {
         return new OpenWeatherApiConfig();
+    }
+
+    @Bean
+    @ConfigurationProperties(prefix = "app.pokemon-api")
+    public PokemonApiConfig createPokemonApiConfig() {
+        return new PokemonApiConfig();
     }
 }

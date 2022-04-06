@@ -28,7 +28,7 @@ public class WeatherControllerTest {
         // when
         ResultActions results = mockMvc.perform(
                 get("/api/weather")
-                        .param("location", place)
+                        .param("city", place)
         );
 
         // then
