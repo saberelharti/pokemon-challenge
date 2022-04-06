@@ -22,7 +22,7 @@ public class OpenWeatherResponse {
     public Weather toDomain(String city) {
 
         WeatherResponse weatherResponse = new WeatherResponse();
-        if(this.weather != null && !this.weather.isEmpty())
+        if (this.weather != null && !this.weather.isEmpty())
             weatherResponse = this.weather.get(0);
 
         return new Weather(

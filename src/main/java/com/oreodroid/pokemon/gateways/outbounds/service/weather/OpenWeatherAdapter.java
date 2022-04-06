@@ -5,7 +5,6 @@ import com.oreodroid.pokemon.core.weather.model.Weather;
 import com.oreodroid.pokemon.core.weather.port.OpenWeatherPort;
 import com.oreodroid.pokemon.gateways.outbounds.service.weather.model.OpenWeatherResponse;
 import lombok.AllArgsConstructor;
-import lombok.val;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;
@@ -18,7 +17,7 @@ public class OpenWeatherAdapter implements OpenWeatherPort {
     private final OpenWeatherApiConfig openWeatherApiConfig;
 
     @Override
-    public Weather getWeatherByLocation(String city) throws HttpClientErrorException{
+    public Weather getWeatherByLocation(String city) throws HttpClientErrorException {
 
         String weatherApi = String.format("%s/weather?q=%s&appid=%s", openWeatherApiConfig.getUrl(), city, openWeatherApiConfig.getAppid());
 
