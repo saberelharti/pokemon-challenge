@@ -1,17 +1,21 @@
-package com.oreodroid.pokemon.core.weather.api.model;
+package com.oreodroid.pokemon.core.weather.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
 @AllArgsConstructor
+@NoArgsConstructor
 public class Weather {
 
     private String main;
 
     private String description;
+
+    private String city;
 
     private Float temperature;
 
@@ -19,7 +23,10 @@ public class Weather {
 
     private Long humidity;
 
-    private Float minTemperature;
+    private String pokemon;
 
-    private Float maxTemperature;
+    public boolean isRaining() {
+
+        return this.main.equals("Rains");
+    }
 }

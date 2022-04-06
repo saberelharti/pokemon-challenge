@@ -1,4 +1,4 @@
-package com.oreodroid.pokemon.core.pokemon.usecase;
+package com.oreodroid.pokemon.core.pokemon.usecases;
 
 public interface GetPokemonNameByType {
 

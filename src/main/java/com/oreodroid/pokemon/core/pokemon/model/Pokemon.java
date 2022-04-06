@@ -1,4 +1,4 @@
-package com.oreodroid.pokemon.core.pokemon.api.model;
+package com.oreodroid.pokemon.core.pokemon.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -12,6 +12,4 @@ public class Pokemon {
     private String name;
 
     private String url;
-
-    private int slot;
 }

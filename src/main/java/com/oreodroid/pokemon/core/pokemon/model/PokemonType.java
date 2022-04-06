@@ -1,7 +1,8 @@
-package com.oreodroid.pokemon.core.pokemon.api.model;
+package com.oreodroid.pokemon.core.pokemon.model;
 
 public enum PokemonType {
 
+    ICE,
     WATER,
     GRASS,
     GROUND,
