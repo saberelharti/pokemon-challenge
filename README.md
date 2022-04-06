@@ -6,7 +6,7 @@ The Challenge is based on consuming 2 API from different sources of data with th
 
 # Postman Doc
 
-You can import Api documentation in Postman from [api-doc.json](doc/api/api-doc.json) 
+You can import Api documentation in Postman from [api-doc.json](doc/api/api-docs.json) 
 
 A collection-scope variable `base_url` points to the usual host `http://localhost:5656`.
 
